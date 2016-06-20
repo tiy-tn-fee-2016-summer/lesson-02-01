@@ -1,0 +1,13 @@
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+
+$max-width: 60rem;
+$gutter: 1rem;
+$brand-white: #efefef;
+$brand-brite-white: #fff;
+$brand-primary: #00aced;
+$brand-darker: darken($brand-primary, 15%);
+
+@import 'font-awesome';
+@import 'box-sizing';
+@import 'reset';
+@import 'top-nav';

@@ -1,0 +1,17 @@
+.top-nav {
+  padding: 0 $gutter * 2;
+
+  background: $brand-brite-white;
+}
+
+.nav-group {
+  display: flex;
+
+  &__item {
+    padding: $gutter;
+
+    &--bordered {
+      border-bottom: 0.2rem solid $brand-primary;
+    }
+  }
+}
