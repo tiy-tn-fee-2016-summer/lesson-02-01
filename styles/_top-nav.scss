@@ -1,4 +1,8 @@
 .top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   padding: 0 $gutter * 2;
 
   background: $brand-brite-white;
@@ -6,12 +10,22 @@
 
 .nav-group {
   display: flex;
+  margin: 0;
+}
 
-  &__item {
-    padding: $gutter;
+.nav-item {
+  padding: $gutter;
 
-    &--bordered {
-      border-bottom: 0.2rem solid $brand-primary;
-    }
+  &--bordered {
+    border-bottom: 0.2rem solid $brand-primary;
   }
+}
+
+.nav-logo {
+  color: $brand-primary;
+}
+
+.nav-avatar {
+  height: 1.4em;
+  border-radius: 0.4rem;
 }
