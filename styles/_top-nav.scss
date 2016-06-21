@@ -19,8 +19,14 @@
   text-align: center;
 
 
-  &--bordered {
+  &--hoverable:nth-of-type(odd) {
     border-bottom: 0.2rem solid $brand-primary;
+  }
+
+  &--hoverable:hover {
+    border-bottom: 0.2rem solid darken($brand-white, 40%);
+
+    color: $brand-primary;
   }
 
   @media screen and (max-width: 50rem) {
