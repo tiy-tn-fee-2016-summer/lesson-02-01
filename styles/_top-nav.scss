@@ -1,5 +1,6 @@
 .top-nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 
@@ -12,12 +13,28 @@
   display: flex;
   align-items: center;
   margin: 0;
+
+  @media screen and (max-width: 50rem) {
+    #nav-toggle + & {
+      display: none;
+      flex-shrink: 0;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    #nav-toggle:checked + & {
+      display: flex;
+    }
+  }
+}
+
+#nav-toggle {
+  display: none;
 }
 
 .nav-item {
   padding: $gutter;
   text-align: center;
-
 
   &--hoverable:nth-of-type(odd) {
     border-bottom: 0.2rem solid $brand-primary;
