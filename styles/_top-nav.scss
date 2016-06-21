@@ -1,7 +1,7 @@
 .top-nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 
   padding: 0 $gutter * 2;
 
@@ -10,6 +10,7 @@
 
 .nav-group {
   display: flex;
+  align-items: center;
   margin: 0;
 }
 
@@ -17,16 +18,33 @@
   padding: $gutter;
   text-align: center;
 
+
   &--bordered {
     border-bottom: 0.2rem solid $brand-primary;
+  }
+
+  @media screen and (max-width: 50rem) {
+    &__text {
+      display: none;
+    }
+
+    &__icon {
+      margin: 0 $gutter / 2;
+    }
   }
 }
 
 .nav-logo {
   color: $brand-primary;
+
+  @media screen and (max-width: 50rem) {
+    display: none;
+  }
 }
 
 .nav-avatar {
   height: 1.4em;
   border-radius: 0.4rem;
+
+  vertical-align: middle;
 }
